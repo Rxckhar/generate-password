@@ -70,7 +70,7 @@ layout.update(
         ),
         box=box.ROUNDED,
         title="Информация",
-        subtitle="Версия программы: V0.0.1",
+        subtitle="Версия программы: V0.0.5",
         style="purple",
         border_style="yellow"
     )
