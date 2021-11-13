@@ -1,32 +1,22 @@
-# generate-password
-
-Получить список всех действующих библиотек для проекта:
+# generat-password
+Получить список всех используемых библиотек в проекте:
 ```bash
 pip list
 ```
 
-Учесть все изменения:
-```bash
-git add .
-```
-
 Коммит:
 ```bash
-git commint -a -m "New version 0.0.0"
+git commit -a -m "New version 0.0.0"
 ```
 
-Отправить изменения:
+Указать версию сборки:
+```bash
+git tag v0.0.0
+```
+
+Отправить новую версию:
 ```bash
 git push
-```
-
- Указать версию сбрки:
- ```bash
- git tag v0.0.0
- ```
-
-Отправляем новую версию:
-```bash
 git push origin --tags
 ```
 
@@ -35,9 +25,8 @@ git push origin --tags
 pip install Flask
 ```
 
-[rich 10.12.0](https://pypi.org/project/rich/)
+[rich 10.12.0](https://pypi.org/project/rich/), 
 [rich api](https://rich.readthedocs.io/en/latest/)
-
 ```bash
 pip install rich
 ```

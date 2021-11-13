@@ -1,10 +1,10 @@
 import json
-
 from flask import Flask
 
 from Password import Password
 
 app = Flask(__name__)
+
 
 @app.route('/password/generation/<count_symbols>')
 def generation_password(count_symbols):
@@ -16,7 +16,7 @@ def generation_password(count_symbols):
 
     response = app.response_class(
         response=json.dumps({
-            "version_app": "0.0.1",
+            "version_app": '0.0.1',
             "count_array_symbols": f'{len(password.get_array_symbols())}',
             "array_symbols": f'{password.get_array_symbols()}',
             "count_variant": f'{password.count_variant}',
